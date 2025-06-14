@@ -1,9 +1,9 @@
 // routes/admin.js
-import express from "express";
+import express, { Router } from "express";
 import { prisma } from "@repo/db";
 import { middleware } from "../middleware/token";
 import cache from "../utils/casche";
-export const adminbooking = express.Router();
+export const adminbooking:Router =Router();
 
 
 
